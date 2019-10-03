@@ -4,7 +4,7 @@
 
 ## SOURCES
 
-- Based on @xataz work (<https://github.com/xataz/docker-lufi>) and modified to bring v.0.04.2
+- Based on @xataz work (<https://github.com/xataz/docker-lufi>) and modified to bring Lufi v.0.04.2
 - Lufi : <https://framagit.org/fiat-tux/hat-softwares/lufi>
 
 ---
