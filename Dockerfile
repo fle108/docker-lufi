@@ -13,9 +13,9 @@ ENV GID=1001 \
     ALLOW_PWD_ON_FILES=1 \
     POLICY_WHEN_FULL=warn
 
-LABEL description="lufi based Ubuntu" \
+LABEL description="lufi Ubuntu based" \
       tags="latest 0.04.2" \
-      maintainer="xataz <https://github.com/xataz>" \
+      maintainer="fle108 <https://github.com/fle108>" \
       build_ver="201909271541"
 
 RUN apt-get update && apt-get install -y locales \
@@ -23,7 +23,6 @@ RUN apt-get update && apt-get install -y locales \
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y \
-                vim \
                 git \
                 cpanminus \
                 build-essential \
