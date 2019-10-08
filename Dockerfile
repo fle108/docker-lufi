@@ -15,15 +15,15 @@ ENV GID=1001 \
     SMTP_SERVER=smtp.provider.com \
     SMTP_SENDER=sender@yourdomain.com \
     DBTYPE=sqlite \
-    LDAP_URI=ldaps://yourDC:389 \
-    USERS_OU='OU=Users,DC=domain,DC=local' \
-    LDAP_READ_USER=ldapreader \
-    LDAP_SECRET=ReaderSecret
+    LDAP_URI=ldaps://dc.domain.local \
+    USERS_OU='DC=domain,DC=local' \
+    BIND_DN=binduser \
+    BIND_PWD=bindpwd
 
 LABEL description="lufi Ubuntu based" \
-      tags="latest 0.04.2" \
+      tags="latest 0.04.2 v4" \
       maintainer="fle108 <https://github.com/fle108>" \
-      build_ver="201910041302"
+      build_ver="201910081841"
 
 RUN apt-get update && apt-get install -y locales \
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8

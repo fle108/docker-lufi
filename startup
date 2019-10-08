@@ -24,9 +24,8 @@ echo "$(sed \
         -e 's|<dbtype>|'${DBTYPE}'|' \
         -e 's|<ldap_uri>|'${LDAP_URI}'|' \
         -e 's|<users_OU>|'${USERS_OU}'|' \
-        -e 's|<ldap_read_user>|'${LDAP_READ_USER}'|' \
-        -e 's|<ldap_secret>|'${LDAP_SECRET}'|' lufi.conf
-
+        -e 's|<bind_dn>|'${BIND_DN}'|' \
+        -e 's|<bind_pwd>|'${BIND_PWD}'|' lufi.conf
 )" > lufi.conf
 
 if [ -e /themes ]; then
